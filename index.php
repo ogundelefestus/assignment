@@ -22,11 +22,11 @@ include('./config.php');
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="signin.html">Login <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="signin.php">Login <span class="sr-only">(current)</span></a>
       </li>
       &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
       <li class="nav-item active">
-        <a class="nav-link" href="/signup">Sign Up<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="signup.php">Sign Up<span class="sr-only">(current)</span></a>
       </li>
       
         <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,11 +52,11 @@ include('./config.php');
           
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li>
-                    <li><a href="student.html"><i class="glyphicon glyphicon-calendar"></i>Students Entry</a></li>
-                    <li><a href="view.html"><i class="glyphicon glyphicon-stats"></i>View Entry</a></li>
-                    <li><a href="lecturer.html"><i class="glyphicon glyphicon-list"></i>Lecturer Entry</a></li>
-                    <li><a href="score.html"><i class="glyphicon glyphicon-record"></i>Score</a></li>
+                    <li class="current"><a href="index.php"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+                    <li><a href="student.php"><i class="glyphicon glyphicon-calendar"></i>Students Entry</a></li>
+                    <li><a href="view.php"><i class="glyphicon glyphicon-stats"></i>View Entry</a></li>
+                    <li><a href="lecturer.php"><i class="glyphicon glyphicon-list"></i>Lecturer Entry</a></li>
+                    
                    <!-- <li><a href=".html"><i class="glyphicon glyphicon-pencil"></i></a></li>
                     <li><a href="forms.html"><i class="glyphicon glyphicon-tasks"></i></a></li>
                     <li class="submenu">

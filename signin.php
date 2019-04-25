@@ -38,10 +38,7 @@
 				<div class="group">
 					<input type="submit" class="button" value="Sign In">
 				</div>
-				<div class="hr"></div>
-				<div class="foot-lnk">
-					<a href="#forgot">Forgot Password?</a>
-				</div>
+				
 			</div>
 			
 			</div>

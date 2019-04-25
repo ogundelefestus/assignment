@@ -33,11 +33,11 @@ $quesry = mysqli_query($conn,"INSERT INTO `questions`(`title`,`lecturer`,`course
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="signin.html">Login <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="signin.php">Login <span class="sr-only">(current)</span></a>
       </li>
       &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
       <li class="nav-item active">
-        <a class="nav-link" href="/signup">Sign Up<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="signup.php">Sign Up<span class="sr-only">(current)</span></a>
       </li>
       
         <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,8 +53,6 @@ $quesry = mysqli_query($conn,"INSERT INTO `questions`(`title`,`lecturer`,`course
       
       </div>
     </nav>
-
-
  <div class="page-content" style="margin-top:90px;">
     	<div class="row">
 		  <div class="col-md-2">
@@ -65,12 +63,11 @@ $quesry = mysqli_query($conn,"INSERT INTO `questions`(`title`,`lecturer`,`course
           
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i>Home</a></li><br>
-                    <li><a href="student.html"><i class="glyphicon glyphicon-calendar"></i>Students Entry</a></li><br>
-                    <li><a href="view.html"><i class="glyphicon glyphicon-stats"></i>View Entry</a></li><br>
-                    <li><a href="lecturer.html"><i class="glyphicon glyphicon-list"></i>Lecturer Entry</a></li><br>
-                    <li><a href="score.html"><i class="glyphicon glyphicon-record"></i>Score</a></li>
-                  </ul>
+                    <li class="current"><a href="index.php"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+                    <li><a href="student.php"><i class="glyphicon glyphicon-calendar"></i>Students Entry</a></li>
+                    <li><a href="view.php"><i class="glyphicon glyphicon-stats"></i>View Entry</a></li>
+                    <li><a href="lecturer.php"><i class="glyphicon glyphicon-list"></i>Lecturer Entry</a></li>
+                    
                    <!-- <li><a href=".html"><i class="glyphicon glyphicon-pencil"></i></a></li>
                     <li><a href="forms.html"><i class="glyphicon glyphicon-tasks"></i></a></li>
                     <li class="submenu">
@@ -99,9 +96,40 @@ $quesry = mysqli_query($conn,"INSERT INTO `questions`(`title`,`lecturer`,`course
 								<a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
 							</div>
 						</div>
-		  				
+		  				<div class="panel-body" style="margin-left:20%;">
+              <form action="lecturer.php" method="post">
+              <div class="form-group">
+                                                    <label>Assignment Questions</label>
+                                                    </div>
+                                                    <div class="form-group">   
+                                                        <textarea required class="form-control" rows="8"  cols="8" name="question" ></textarea>
+                                                   </div>
+                                               
+
+                                                <div class="form-group">
+                                                <div class="form-group">
+                                                    <label>Course</label>
+                                                    </div>
+            <select name= "course"style="width:400px; height:50px;">
+              <option>GNS201</option>
+              <option>GNS202</option>
+              <option>GNS203</option>
+              <option>GNS204</option>
+              <option>GNS205</option>
+              <option>GNS206</option>
+              <option>GNS207</option>
+              <option>GNS208</option>
+              <option>GNS209</option>
 
 
+            </select>
+            </div>
+            
+                                                <div class="button-items">
+                                                <button type="submit" class="btn btn-primary waves-effect waves-light " name="submit">Submit</button>
+                                            </div>
+                            </form>
+		  				</div>
 		  			</div>
 		  		</div>
 
@@ -113,33 +141,8 @@ $quesry = mysqli_query($conn,"INSERT INTO `questions`(`title`,`lecturer`,`course
 		</div>
     </div>
     </div>
+   
 
-    <!--  -->
-
-
-        <form action="lecturer.php" method="post">
-            <textarea  name="question" >
-            </textarea>
-            <select name= "course">
-              <option>GNS201</option>
-              <option>GNS202</option>
-              <option>GNS203</option>
-              <option>GNS204</option>
-              <option>GNS205</option>
-              <option>GNS206</option>
-              <option>GNS207</option>
-              <option>GNS208</option>
-              <option>GNS209</option>
-
-            </select>
-            <button type="submit" name="submit">Submit</button> 
-        </form>
-    <!--  -->
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
